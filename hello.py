@@ -5,7 +5,7 @@ def main():
 	print ("Hello World!")
 	
 	if x == z:
-		print "Ok"
+		print ("Ok")
 	elif x != z:
 		print ("Not Ok")
 	
