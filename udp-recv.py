@@ -2,7 +2,7 @@ import socket
 
 # variables
 host = "localhost"
-port = 8000
+port = 8080
 
 client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
