@@ -1,4 +1,4 @@
-# some random character shit
+# some random character stuff
 from random import randint
 def rint():
 	r = randint(65,122)
