@@ -1,4 +1,4 @@
-# some random integer shit
+# some random integer stuff
 from random import randint
 def rint():
 	r = randint(64,90)
