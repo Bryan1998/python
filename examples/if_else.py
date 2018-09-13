@@ -1,6 +1,6 @@
-#/usr/bin/python
+#!/usr/bin/python3
 
-integer = raw_input("Enter an integer: ")
+integer = input("Enter an integer: ")
 integer = int(integer)
 
 if integer > 50:
