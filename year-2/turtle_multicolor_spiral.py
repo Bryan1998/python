@@ -1,4 +1,3 @@
-import Tkinter as tk
 import turtle, colorsys
 
 turtle.bgcolor("black")
@@ -13,4 +12,5 @@ def why(idx):
 		t.right(10)
 
 why(500)
-#holdit = input("press to exit")
+
+input("HOLD IT! Press enter to comtinue...")
