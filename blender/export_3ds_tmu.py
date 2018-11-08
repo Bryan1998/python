@@ -1201,28 +1201,6 @@ def save_3ds(exportOptions, filename):
 	# Close the file:
 	file.close()
 
-	# Check if SUP file is requested
-	if exportOptions.enablesup:
-		# Open the SUP file
-		file = open( filename[:-4]+'.sup', 'w' )
-
-		# Write the RootFrame object
-		if exportOptions.enablebeta:
-			file.write( '[RootFrame]\r\nIsPivot=BOOL:No\r\nName=STRING:RootFrame\r\nParent=STRING:\r\nPivot=STRING:\r\n\r\n' )
-		else:
-			file.write( '[RootFrame]\r\nIsPivot=No\r\nName=RootFrame\r\nParent=\r\nPivot=\r\n\r\n' )
-
-		read_globaloptions()
-
-		for ob, blender_mesh in mesh_objects:
-			write_sup( file, ob, False )
-
-		for ob in empty_objects:
-			write_sup( file, ob, True )
-
-		# Close the SUP file
-		file.close()
-
 	# Debugging only: report the exporting time:
 	print( "3ds export time: %.2f" % (time.time() - time1) )
 
@@ -1235,6 +1213,6 @@ if __name__=='__main__':
     except:
         pass
     register()
-	
+
     save_3ds(OBJECT_OT_tmf_export, OBJECT_OT_tmf_export.filepath )
 # save_3ds( '/test_b.3ds' )
